@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background: url("45.jpg");
+    
+        }
+        header{
+            background: maroon;
+            color:#fff;
+            height: 100px;
+            border-radius: 0px 0px 20px 20px;
+        }
+        h1{
+            padding-left: 50px;
+            padding-top: 30px;
+        }
+        h2{
+            padding-left: 50px;
+            padding-top: 30px;
+        }
+        p{
+            font-size: 1.2em;
+            padding: 20px;
+        }
+        nav{
+            padding-left: 70%;
+            background: transparent;
+            background: none;
+        }
+        nav ul{
+            padding:0px ;
+            margin: 0px;
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            font-size: 1.3em;
+        }
+        nav ul li a{
+            list-style-type: none;
+            text-decoration: none;
+            justify-content: right;
+            background:none;
+            color: #fff;
+        }
+        table{
+            width:90%;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        table,tr{
+            height: 60px;
+            text-align: center;
+        }
+        table,th,tr td{
+            border: 2px solid black;
+            background: rgb(129, 241, 129);
+    
+            
+        }
+        #Adventure{
+            padding-left: 80px;
+        }
+        .photos{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        #Register{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        form{
+            padding: 50px;
+            margin: 20px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+        }
+        
+        </style>
+</head>
+<body>
+    <header>
+        <h1>The Adventure Begins</h1>
+    <nav>
+        <ul>
+            <li><a href="#Adventure">Adventures</a></li>
+            <li><a href="#Accomodation">Accomodation</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Register">Register</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="home">
+        <p>My safari travels have taken me across some of the most breathtaking destinations in East Africa.<br>
+             From the vast plains of Queen Elizabeth National Park in western Uganda, where tree-climbing lions and boat safaris along the Kazinga Channel create unforgettable sights, to the roaring power of Murchison Falls in the north, every stop has offered its own wonder. Trekking through the misty Bwindi Impenetrable Forest brought me face to face with the serenity of nature and the rare mountain gorillas that call it home. Crossing borders into Kenya’s Maasai Mara and Tanzania’s Serengeti, I witnessed the legendary Great Migration — millions of wildebeest and zebras moving in harmony across endless horizons. Each place reflected a different rhythm of the wild, reminding me how deeply beauty and adventure are woven into Africa’s landscapes.</p>
+    </div>
+    <div id="Adventure">
+        <h2>Adventure Table </h2>
+        <table>
+            <tr>
+                <th>Place</th>
+                <th>Country/Region</th>
+                <th>Best time</th>
+                <th>Highlights</th>
+            </tr>
+            <tr>
+                <td>Queen Elizabeth National park</td>
+                <td>Western Uganda</td>
+                <td>June</td>
+                <td>Wildlife</td>
+            </tr>
+            <tr>
+                <td>Murchison Falls</td>
+                <td>Northern Uganda</td>
+                <td>February</td>
+                <td>Powerfull Waterfalls</td>
+            </tr>
+            <tr>
+                <td>Bwindi Impenetrable Forest</td>
+                <td>SouthWest Uganda</td>
+                <td>June</td>
+                <td>Mountain gorillas, trekking</td>
+                
+            </tr>
+            <tr>
+                <td>Maasai Mara</td>
+                <td>Kenya</td>
+                <td>July</td>
+                <td>Great Migration</td>
+            </tr>
+        </table>
+        <p>Every adventure tells a story — and mine begins where the wild meets the horizon. From sunrise game drives through golden savannas to sunset hikes along rugged trails, every moment on safari is a journey into nature’s heart. The thrill of spotting a lion in the tall grass, hearing elephants trumpet in the distance, or crossing muddy tracks after a fresh rain adds life to the experience. Each adventure challenges me to explore deeper, breathe freer, and see beauty in the untamed rhythm of the wild.</p>
+    </div>
+    <section id="Accomodation">
+        <h2>Accomadation</h2>
+        <p>During the safari, guests can relax in comfortable lodges, tented camps, and eco-friendly resorts that blend perfectly with the natural surroundings. Each accommodation offers warm hospitality, local cuisine, and stunning views of the wild — giving travelers a peaceful retreat after a day of adventure.</p>
+        <div class="photos">
+            <img src="safari1.jpg" style="border-radius: 20px;">
+            <img src="safari3.jpg" style="border-radius: 20px;">
+        </div>
+    </section>
+    <div id="Services">
+        <h2>Services</h2>
+        <p>Our safari services are designed to make every journey smooth and unforgettable. We offer guided game drives, travel planning, accommodation booking, and transport arrangements — all handled by experienced professionals. Whether it’s a solo trip, family tour, or group adventure, our team ensures comfort, safety, and an authentic experience in every moment of your safari.</p>
+    </div>
+    <div id="Register">
+        <form action="submit.html" method="post">
+            <h3>Register</h3>
+            <p >Help Safari Travels get the best for you by sharing some information.</p>
+            
+                <h4 style="text-align: center;font-size: 18px;">Enter your information here</h4><hr>
+                <label>Email</label><br>
+                <input required type="email" name="email" placeholder="Enter your email address"style="height:30px;width:250px;border-radius:20px;"><br>
+                <label>First Name</label><br>
+                <input required type="text" name="First Name" placeholder="Enter your First Name"style="height:30px;width:250px;border-radius:20px;"><br>
+                <label>Last Name</label><br>
+                <input required type="text" name="Last Name" placeholder="Enter your Last Name"style="height:30px;width:250px;border-radius:20px;"><br>
+                <label >Date Of Birth</label><br>
+                <input required type="date"><br>
+                <label>Marital Status</label>
+                <select name="Marital status" >
+                    <option value="None">None</option>
+                    <option value="Single">Single</option>
+                    <option value="married">Married</option>
+                </select><br>
+                
+                <label>Gender: </label>  <label >Male</label>
+                <input type="radio" name="gender" value="Male">
+                <label >Female</label>
+                <input type="radio" name="gender" value="Female"><br>
+                <label >Which country would you like to visit?</label>
+                <label><br>
+                <input type="checkbox" name="Uganda" value="Uganda">Uganda
+                </label>
+                <label >
+                    <input type="checkbox" name="Kenya" value="Kenya">Kenya
+                </label>
+                <label>
+                    <input type="checkbox" name="Tanzania" value="Tanzania">
+                </label>
+                <label>
+                Ethiopia
+                </label><br>
+                <label>Write a message</label><br>
+                <textarea name="message" placeholder="Leave a message" style="height: 150px;width: 350px;"></textarea><br>
+                <button type="submit" style="height: 30px;width: 80px;border-radius: 20px;">Submit</button>
+                
+
+        </form>
+    </div>
+</body>
+</html>
